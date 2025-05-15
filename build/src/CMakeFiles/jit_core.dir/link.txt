@@ -1,0 +1,2 @@
+/usr/bin/ar qc libjit_core.a CMakeFiles/jit_core.dir/lexer/lexer.cpp.o CMakeFiles/jit_core.dir/parser/parser.cpp.o CMakeFiles/jit_core.dir/ast/ast.cpp.o CMakeFiles/jit_core.dir/ast/ast_printer.cpp.o CMakeFiles/jit_core.dir/ir/irgen.cpp.o CMakeFiles/jit_core.dir/optimizer/optimizer.cpp.o CMakeFiles/jit_core.dir/codegen/codegen.cpp.o CMakeFiles/jit_core.dir/runtime/runtime.cpp.o
+/usr/bin/ranlib libjit_core.a

@@ -1,0 +1,14 @@
+add_library(jit_core
+    lexer/lexer.cpp
+    parser/parser.cpp
+    ast/ast.cpp
+    ast/ast_printer.cpp
+    ir/irgen.cpp
+    optimizer/optimizer.cpp
+    codegen/codegen.cpp
+    runtime/runtime.cpp
+)
+target_sources(jit_core
+    PRIVATE
+    lexer/lexer.cpp
+)
