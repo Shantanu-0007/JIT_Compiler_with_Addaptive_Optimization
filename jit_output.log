@@ -1,0 +1,52 @@
+Enter an expression: 
+Lexical Analysis took 45 microseconds.
+TOKENS
+Token: a (type: Identifier)
+Token: + (type: Plus)
+Token: b (type: Identifier)
+Token: * (type: Multiply)
+Token: c (type: Identifier)
+Token: / (type: Divide)
+Token: ( (type: LeftParen)
+Token: i (type: Identifier)
+Token: + (type: Plus)
+Token: u (type: Identifier)
+Token: ) (type: RightParen)
+Token:  (type: EndOfInput)
+Parsing took 13 microseconds.
+ABSTRACT SYNTAX TREE
+BinaryOp: +
+Left:
+  Identifier: a
+Right:
+  BinaryOp: /
+  Left:
+    BinaryOp: *
+    Left:
+      Identifier: b
+    Right:
+      Identifier: c
+  Right:
+    BinaryOp: +
+    Left:
+      Identifier: i
+    Right:
+      Identifier: u
+3-ADDRESS CODE REPRESENTATION
+TAC Generation took 16 microseconds.
+t0 = a
+t1 = b
+t2 = c
+t3 = t1 * t2
+t4 = i
+t5 = u
+t6 = t4 + t5
+t7 = t3 / t6
+t8 = t0 + t7
+result = t8
+CODE OPTIMIZATION
+Optimization took 106 microseconds.
+t12 = b * c
+t15 = i + u
+t16 = t12 / t15
+t17 = a + t16
